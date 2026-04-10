@@ -1,5 +1,5 @@
-### Bryopsidales_Phylogenomics_workflow
-A complete phylogenomic pipeline for green macrophytes
+### Phylogenomic_workflow
+A complete and easy phylogenomic pipeline using translatorX and iqtree2 with a partitioned dataset for green macrophytes
 
 
 
