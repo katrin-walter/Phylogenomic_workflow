@@ -1,4 +1,5 @@
 # Downloading .gb files via esearch and efetch
+
 install Entrez Direct, if you want to download files directly from NCBI.
 ```bash
 sh -c "$(curl -fsSL https://ftp.ncbi.nlm.nih.gov/entrez/entrezdirect/install-edirect.sh)"
