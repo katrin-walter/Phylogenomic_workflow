@@ -36,5 +36,28 @@ A complete and easy phylogenomic pipeline using translatorX and iqtree2 with a p
    - -b5=n decide parameters for GBlocks
 
 8. If Alignments are ready move all `nt.cleanali.fasta` in one folder and all `aa.cleanali.fasta` in one folder
+```
+├── Phylo_tree
+│   ├── fasta files
+│   └── translatorX_results/ #here you run the command for translatorX
+├── nucleotide_tree
+│   ├── all nt.cleanali.fasta
+│   └── iqtree_nt_results #here you run iqtree for nucleotide sequences
+├── amino_tree
+│   ├── all aa.cleanali.fasta
+│   └── iqtree_aa_results #here you run iqtree for amino acid sequences
+```
 
+9. Check the models in IQ TREE, here you can use a standard TEST model, finding the best fitting model for each alignment. Use 1000 bootstrap support and give it an output name of your choice (--prefix name)
+10. head to `iqtree_nt_results` for the nucleotide tree and run
+   ```bash
+   nohup bash -c 'iqtree -p ../ --seqtype DNA -m TEST --prefix iqtree1 -B 1000 -T 5' &
+   ```
+
+11. head to `iqtree_nt_results` for the amino acid tree and run
+```bash
+   nohup bash -c 'iqtree -p ../ --seqtype AA -m TEST --prefix iqtree1 -B 1000 -T 5' &
+   ```
+
+12. Check docs -> XY how to visualize your tree
 
