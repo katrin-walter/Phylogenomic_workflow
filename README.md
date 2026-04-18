@@ -59,5 +59,18 @@ A complete and easy phylogenomic pipeline using translatorX and iqtree2 with a p
    nohup bash -c 'iqtree -p ../ --seqtype AA -m TEST --prefix iqtree1 -B 1000 -T 5' &
    ```
 
-12. Check docs -> XY how to visualize your tree
+12. Use the .treefile to visualize the tree. Download Figtree or go to https://itol.embl.de/
+
+
+
+Source:
+* Abascal F, Zardoya R, Telford MJ (2010)
+  TranslatorX: multiple alignment of nucleotide sequences guided by amino acid translations
+  Nucleic Acids Res. doi:10.1093/nar/gkq291
+* https://mafft.cbrc.jp/alignment/software/
+* https://iqtree.github.io/doc/Tutorial#input-data
+  
+
+
+
 
