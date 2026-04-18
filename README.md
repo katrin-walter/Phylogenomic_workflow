@@ -3,15 +3,15 @@ A complete and easy phylogenomic pipeline using translatorX and iqtree2 with a p
 
 
 1. optional: install Entrez Direct, if you want to download files directly from NCBI.
-   head to docs -> Entrez_Direct.md and follow instructions
+   Go to docs -> Entrez_Direct.md and follow instructions
 
-2. Extract every gene sequence of every taxa (.gb file) into one fasta file
+3. Extract every gene sequence of every taxa (.gb file) into one fasta file
    Example: gene name: accD
    all accD sequences from every taxa in one accD.fasta file ect..
 
-3. Apply the script `python extract_gene_fasta.py ` 
+4. Apply the script `python extract_gene_fasta.py ` 
 
-4. Installing translatorX and mafft
+5. Installing translatorX and mafft
 
    a) if you prefer, create a new environment before installing and activate it (e.g. phylogenomic)
    
@@ -22,7 +22,7 @@ A complete and easy phylogenomic pipeline using translatorX and iqtree2 with a p
    c) ``` conda install -c bioconda mafft ```
       check with ``` mafft --version ```
    
-5. If working with a large set of genome, connect to a HPC cluster and organize your files and folders
+6. If working with a large set of genome, connect to a HPC cluster and organize your files and folders
    a) mkdir Phylo_tree: in that folder load all of your fasta files
    b) within Phylo_tree also do mkdir translatorX_results
   
