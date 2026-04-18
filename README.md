@@ -24,7 +24,7 @@ A complete and easy phylogenomic pipeline using translatorX and iqtree2 with a p
    c) ``` conda install -c bioconda mafft ```
       check with ``` mafft --version ```
    
-7. If working with a large set of genome, connect to a HPC cluster and organize your files and folders
+7. If working with a large set of genomes, connect to a HPC cluster and organize your files and folders
    a) mkdir Phylo_tree: in that folder load all of your fasta files
    b) within Phylo_tree also do mkdir translatorX_results
   
