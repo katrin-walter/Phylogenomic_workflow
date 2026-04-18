@@ -44,10 +44,10 @@ A complete and easy phylogenomic pipeline using translatorX and iqtree2 with a p
 │   └── translatorX_results/ #here you run the command for translatorX
 ├── nucleotide_tree
 │   ├── all nt.cleanali.fasta
-│   └── iqtree_nt_results #here you run iqtree for nucleotide sequences
+│   └── iqtree_nt_results/ #here you run iqtree for nucleotide sequences
 ├── amino_tree
 │   ├── all aa.cleanali.fasta
-│   └── iqtree_aa_results #here you run iqtree for amino acid sequences
+│   └── iqtree_aa_results/ #here you run iqtree for amino acid sequences
 ```
 
 9. Check the models in IQ TREE, here you can use a standard TEST model, finding the best fitting model for each alignment. Use 1000 bootstrap support and give it an output name of your choice (--prefix name)
