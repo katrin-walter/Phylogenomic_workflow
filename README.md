@@ -8,6 +8,7 @@ A complete and easy phylogenomic pipeline using translatorX and iqtree2 with a p
 3. Extract every gene sequence of all taxa (.gb file) into one fasta file
 
    Example: gene name: accD
+   
    all accD sequences from every taxa in one accD.fasta file ect..
 
 5. Apply the script `python extract_gene_fasta.py ` 
