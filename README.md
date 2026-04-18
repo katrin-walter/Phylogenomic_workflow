@@ -5,13 +5,14 @@ A complete and easy phylogenomic pipeline using translatorX and iqtree2 with a p
 1. optional: install Entrez Direct, if you want to download files directly from NCBI.
    Go to docs -> Entrez_Direct.md and follow instructions
 
-3. Extract every gene sequence of every taxa (.gb file) into one fasta file
+3. Extract every gene sequence of all taxa (.gb file) into one fasta file
+
    Example: gene name: accD
    all accD sequences from every taxa in one accD.fasta file ect..
 
-4. Apply the script `python extract_gene_fasta.py ` 
+5. Apply the script `python extract_gene_fasta.py ` 
 
-5. Installing translatorX and mafft
+6. Installing translatorX and mafft
 
    a) if you prefer, create a new environment before installing and activate it (e.g. phylogenomic)
    
@@ -22,11 +23,11 @@ A complete and easy phylogenomic pipeline using translatorX and iqtree2 with a p
    c) ``` conda install -c bioconda mafft ```
       check with ``` mafft --version ```
    
-6. If working with a large set of genome, connect to a HPC cluster and organize your files and folders
+7. If working with a large set of genome, connect to a HPC cluster and organize your files and folders
    a) mkdir Phylo_tree: in that folder load all of your fasta files
    b) within Phylo_tree also do mkdir translatorX_results
   
-7. Go to "translatorX_results" and run following command: 
+8. Go to "translatorX_results" and run following command: 
    ```bash
    parallel --jobs 5 translatorx -i {} -o {/.}_tx.fasta -p F -c 11 -g -b5=n ::: ../*fasta
    ```
@@ -35,7 +36,7 @@ A complete and easy phylogenomic pipeline using translatorX and iqtree2 with a p
    - -c 1 change code to 11 (bacterial and plant one)
    - -b5=n decide parameters for GBlocks
 
-8. If Alignments are ready move all `nt.cleanali.fasta` in one folder and all `aa.cleanali.fasta` in one folder
+9. If Alignments are ready move all `nt.cleanali.fasta` in one folder and all `aa.cleanali.fasta` in one folder
 ```
 ├── Phylo_tree
 │   ├── fasta files
